@@ -1,0 +1,38 @@
+.cardPost{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    background-image: linear-gradient(45deg,cyan,blue);
+    background-size:cover;
+    
+}
+@media (max-width:768px){
+   
+    .cardPost{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+#buddy{
+    background-image: linear-gradient(45deg,cyan,blue);
+    text-align: center;
+}
+/* #buddy{
+    transform:skew(180deg);
+    transition:2s;
+    
+} */
+@keyframes transitionIn{
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#buddy{
+    animation:transitionIn 0.75s;
+}
+
